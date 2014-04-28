@@ -1,0 +1,8 @@
+D:\Proyectos\InfijoAPrefijo\InfijoAPrefijo\InfijoAPrefijo.ConsoleTest\bin\Debug\InfijoAPrefijo.ConsoleTest.exe.config
+D:\Proyectos\InfijoAPrefijo\InfijoAPrefijo\InfijoAPrefijo.ConsoleTest\bin\Debug\InfijoAPrefijo.ConsoleTest.exe
+D:\Proyectos\InfijoAPrefijo\InfijoAPrefijo\InfijoAPrefijo.ConsoleTest\bin\Debug\InfijoAPrefijo.ConsoleTest.pdb
+D:\Proyectos\InfijoAPrefijo\InfijoAPrefijo\InfijoAPrefijo.ConsoleTest\bin\Debug\InfijoAPrefijo.Core.dll
+D:\Proyectos\InfijoAPrefijo\InfijoAPrefijo\InfijoAPrefijo.ConsoleTest\bin\Debug\InfijoAPrefijo.Core.pdb
+D:\Proyectos\InfijoAPrefijo\InfijoAPrefijo\InfijoAPrefijo.ConsoleTest\obj\Debug\InfijoAPrefijo.ConsoleTest.csprojResolveAssemblyReference.cache
+D:\Proyectos\InfijoAPrefijo\InfijoAPrefijo\InfijoAPrefijo.ConsoleTest\obj\Debug\InfijoAPrefijo.ConsoleTest.exe
+D:\Proyectos\InfijoAPrefijo\InfijoAPrefijo\InfijoAPrefijo.ConsoleTest\obj\Debug\InfijoAPrefijo.ConsoleTest.pdb
