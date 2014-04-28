@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1398579113 source:c:\users\francisco\desktop\infijoprefijo\main.cpp
+	<iostream>
+	<stack>
+	<string>
+
+1398583707 source:d:\proyectos\infijoaprefijo\main.cpp
+	<iostream>
+	<stack>
+	<string>
+
