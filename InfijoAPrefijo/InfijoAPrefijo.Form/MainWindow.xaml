@@ -1,9 +1,27 @@
 ﻿<Window x:Class="InfijoAPrefijo.Form.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:vm="clr-namespace:InfijoAPrefijo.Form.ViewModels"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        
         Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="136"/>
+    <Window.Resources>
+        <vm:InfixConverterViewModel x:Key="ViewModel" />
+    </Window.Resources>
+    <Grid DataContext="{Binding Source={StaticResource ViewModel}}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="89*"/>
+            <RowDefinition Height="97*"/>
+            <RowDefinition Height="133*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="153*"/>
+            <ColumnDefinition Width="364*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Infijo&#xD;&#xA;" HorizontalAlignment="Left" Margin="10,10,0,0" Width="133" Height="69" VerticalAlignment="Top"/>
+        <Label Content="Prefijo&#xD;&#xA;" HorizontalAlignment="Left" Margin="10,10,0,0" Width="133" Grid.Row="1" Height="77" VerticalAlignment="Top"/>
+        <TextBox Grid.Column="1" Grid.Row="0" Text="{Binding Infix,Mode=TwoWay}" HorizontalAlignment="Left" Height="67" Margin="10,0,0,12" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="341" RenderTransformOrigin="0.5,0.5" />
+        <TextBox Grid.Column="1" HorizontalAlignment="Left" Text="{Binding Prefix, Mode=OneWay}" Height="77" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="344" Grid.Row="1"/>
+        <Button Content="Convertir" Grid.Column="1" HorizontalAlignment="Left" Margin="237,80,0,0" Grid.Row="2" Width="117" Height="43" VerticalAlignment="Top" Command="{Binding Convertir}"/>
 
     </Grid>
 </Window>
