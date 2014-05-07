@@ -12,9 +12,11 @@ namespace InfijoAPrefijo.ConsoleTest
         static void Main(string[] args)
         {
             var convertidor = new ConvertidorInfijoAPrefijo();
-
+            
             string infijo;
-
+            Console.WriteLine(char.GetUnicodeCategory('.'));
+            Console.WriteLine(char.GetUnicodeCategory('*'));
+            Console.WriteLine(char.GetUnicodeCategory('/'));
             Console.WriteLine("Ingresa la expresión infija: ");
             infijo = Console.ReadLine();
             try

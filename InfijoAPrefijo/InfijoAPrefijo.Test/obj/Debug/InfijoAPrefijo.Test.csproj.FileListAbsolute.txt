@@ -1,0 +1,7 @@
+D:\Proyectos\InfijoAPrefijo\InfijoAPrefijo\InfijoAPrefijo.Test\bin\Debug\InfijoAPrefijo.Test.dll
+D:\Proyectos\InfijoAPrefijo\InfijoAPrefijo\InfijoAPrefijo.Test\bin\Debug\InfijoAPrefijo.Test.pdb
+D:\Proyectos\InfijoAPrefijo\InfijoAPrefijo\InfijoAPrefijo.Test\bin\Debug\InfijoAPrefijo.Core.dll
+D:\Proyectos\InfijoAPrefijo\InfijoAPrefijo\InfijoAPrefijo.Test\bin\Debug\InfijoAPrefijo.Core.pdb
+D:\Proyectos\InfijoAPrefijo\InfijoAPrefijo\InfijoAPrefijo.Test\obj\Debug\InfijoAPrefijo.Test.csprojResolveAssemblyReference.cache
+D:\Proyectos\InfijoAPrefijo\InfijoAPrefijo\InfijoAPrefijo.Test\obj\Debug\InfijoAPrefijo.Test.dll
+D:\Proyectos\InfijoAPrefijo\InfijoAPrefijo\InfijoAPrefijo.Test\obj\Debug\InfijoAPrefijo.Test.pdb
