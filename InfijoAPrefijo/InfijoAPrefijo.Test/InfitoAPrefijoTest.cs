@@ -13,6 +13,7 @@ namespace InfijoAPrefijo.Test
             ConvertidorInfijoAPrefijo c = new ConvertidorInfijoAPrefijo();
             StringAssert.Equals("+ 3 3", c.Convertir("3+3"));
             StringAssert.Equals("+ 3 / 3 4", c.Convertir("3+3/4"));
+            StringAssert.Equals("+ 3.7 / 3 4.8", c.Convertir("3.7+3/4.8"));
         }
     }
 }
