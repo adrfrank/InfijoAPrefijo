@@ -3,25 +3,25 @@
         xmlns:vm="clr-namespace:InfijoAPrefijo.Form.ViewModels"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         
-        Title="MainWindow" Height="350" Width="525">
+        Title="Infijo a prefijo" Height="350" Width="525" HorizontalAlignment="Center" VerticalAlignment="Center" ResizeMode="NoResize" ToolTip="Infijo a prefijo" Background="#FFB9EEFF" FontSize="14">
     <Window.Resources>
         <vm:InfixConverterViewModel x:Key="ViewModel" />
     </Window.Resources>
-    <Grid DataContext="{Binding Source={StaticResource ViewModel}}">
+    <Grid DataContext="{Binding Source={StaticResource ViewModel}}" Margin="0,0,0,-18">
         <Grid.RowDefinitions>
-            <RowDefinition Height="89*"/>
-            <RowDefinition Height="97*"/>
-            <RowDefinition Height="133*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="153*"/>
             <ColumnDefinition Width="364*"/>
         </Grid.ColumnDefinitions>
-        <Label Content="Infijo&#xD;&#xA;" HorizontalAlignment="Left" Margin="10,10,0,0" Width="133" Height="69" VerticalAlignment="Top"/>
-        <Label Content="Prefijo&#xD;&#xA;" HorizontalAlignment="Left" Margin="10,10,0,0" Width="133" Grid.Row="1" Height="77" VerticalAlignment="Top"/>
-        <TextBox Grid.Column="1" Grid.Row="0" Text="{Binding Infix,Mode=TwoWay}" HorizontalAlignment="Left" Height="67" Margin="10,0,0,12" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="341" RenderTransformOrigin="0.5,0.5" />
-        <TextBox Grid.Column="1" HorizontalAlignment="Left" Text="{Binding Prefix, Mode=OneWay}" Height="77" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="344" Grid.Row="1"/>
-        <Button Content="Convertir" Grid.Column="1" HorizontalAlignment="Left" Margin="237,80,0,0" Grid.Row="2" Width="117" Height="43" VerticalAlignment="Top" Command="{Binding Convertir}"/>
+        <Label Content="Infijo&#xD;&#xA;" ClipToBounds="True" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="0" Grid.Row="0" Margin="0" FontWeight="Bold" FontSize="16" />
+        <Label Content="Prefijo&#xD;&#xA;" HorizontalAlignment="Center" Grid.Row="1" Height="32" VerticalAlignment="Center" Margin="0" FontWeight="Bold" FontSize="16"/>
+        <TextBox Grid.Column="1" Grid.Row="0" Text="{Binding Infix,Mode=TwoWay}" HorizontalAlignment="Center" Height="67" Margin="0" TextWrapping="Wrap" VerticalAlignment="Center" Width="341" RenderTransformOrigin="0.5,0.5" />
+        <TextBox Grid.Column="1" HorizontalAlignment="Center" Text="{Binding Prefix, Mode=OneWay}" Height="77" Margin="0" TextWrapping="Wrap" VerticalAlignment="Center" Width="344" Grid.Row="1"/>
+        <Button Content="Convertir" Grid.Column="1" HorizontalAlignment="Center" Margin="0" Grid.Row="2" Width="117" Height="43" VerticalAlignment="Center" Command="{Binding Convertir}" ToolTip="Convertir" Background="#FF23457F" BorderBrush="#FF172D52" Foreground="#FFECDFDF" FontSize="16"/>
 
     </Grid>
 </Window>
