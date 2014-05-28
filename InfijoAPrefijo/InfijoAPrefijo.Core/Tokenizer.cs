@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Globalization;
 using System.Linq;
 using System.Text;
@@ -27,7 +28,7 @@ namespace InfijoAPrefijo.Core
             TransitionList.Add(new Transition(0, UnicodeCategory.MathSymbol, 2));
             TransitionList.Add(new Transition(0, UnicodeCategory.OpenPunctuation, 3));
             TransitionList.Add(new Transition(0, UnicodeCategory.ClosePunctuation, 4));
-            TransitionList.Add(new Transition(1, UnicodeCategory.DecimalDigitNumber, 2));
+            TransitionList.Add(new Transition(1, UnicodeCategory.DecimalDigitNumber, 1));
             TransitionList.Add(new Transition(1, UnicodeCategory.OtherPunctuation, 5));
             TransitionList.Add(new Transition(5, UnicodeCategory.DecimalDigitNumber, 6));
             TransitionList.Add(new Transition(6, UnicodeCategory.DecimalDigitNumber, 6));
@@ -54,6 +55,7 @@ namespace InfijoAPrefijo.Core
                         continue;
                     cad += c;
                     state = NextState(state, c);
+                    Debug.WriteLine(string.Format("Estate: {0}", state));
                 } while (inputQ.Count > 0 &&(!IsFinal(state) || NextState(state, inputQ.Peek()) != -1 ));
                 if (state != -1)
                     list.Add(new Token() { Value = cad, TokenType = ResolveTokenType(state)  });
@@ -71,7 +73,8 @@ namespace InfijoAPrefijo.Core
                 || c == '.'
                 || c == '*'
                 || c == '/'
-                || c == '-');
+                || c == '-'
+                || c == '^');
         }
 
         static bool IsFinal(int state)
@@ -87,7 +90,7 @@ namespace InfijoAPrefijo.Core
         static int NextState(int state, char c)
         {
             var cat =char.GetUnicodeCategory(c);
-            if(c == '*' || c == '/' || c=='-')
+            if(c == '*' || c == '/' || c=='-'||c=='^')
                 cat = UnicodeCategory.MathSymbol;
 
             if(!IsValid(c))
